@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-int main(int argc, char *argv[])
-{
+int main(int argc, char *argv[]) {
 
     int x = 10;
     int *p = &x;
@@ -21,7 +20,6 @@ int main(int argc, char *argv[])
     printf("**pp = %d\n", **pp);
 
     printf("&pp = %p\n", &pp);
-
 
     return EXIT_SUCCESS;
 }
