@@ -28,9 +28,7 @@ void put(HashTable **hashTable, char *key, int value) {
     int index = hash(key);
     internHashTable[index].key = index;
     internHashTable[index].value = value;
-
 }
-
 
 int get(HashTable **hashTable, int key) {
     HashTable *internHashTable = *hashTable;
@@ -44,10 +42,8 @@ int main(int argc, char *argv[]) {
     put(&hashTable, "a", 1);
     put(&hashTable, "b", 2);
     put(&hashTable, "c", 3);
-    
 
     printf("%d\n", get(&hashTable, hash("a")));
-
 
     free(hashTable);
     return 0;
